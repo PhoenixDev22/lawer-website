@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lawyer website">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Main styles file -->
+    <link rel="stylesheet" href="../dist/styles.css">
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Main js file -->
+    <script src="main.js" defer></script>
+    <title>Attorneys</title>
+</head>
+<body>
+    <!-- Start Header -->
+
+    <header class="header">
+        <div class="top">
+            <div class="container">
+                <ul class="g-16 flex-r contact_info">
+                    <li>
+                        <i class="y-icon ri-mail-fill" aria-hidden="true"></i>
+                        <a href="/" class="link">info@company.com</a>
+                    </li>
+                    <li>
+                        <i class="y-icon ri-phone-fill" aria-hidden="true"></i>
+                        <a href="/" class="link" aria-label="call us">+12340067890</a>
+                    </li>
+                </ul>
+                <ul class="g-16 flex-r social_links">
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Visit our facebookpage</span>
+                            <i class="ri-facebook-fill" aria-hidden="true"></i> </a>
+                    </li>
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Visit our youtube page</span>
+                            <i class="ri-youtube-fill" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Visit our twitter page</span>
+                            <i class="ri-twitter-fill" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container button-container flex-r">
+            <div class="flex-r">
+                <!-- Logo -->
+                <a href="/" class="flex-r logo-link">
+                    <i class="scale ri-scales-3-line" aria-hidden="true"></i>
+                    <p class="flex-c logo-text">Lawe <span class="sm-logo-text">Lawyer & Attorneys</span></p>
+                </a>
+                <!-- Toggle button -->
+                <button id="toggle_btn" class="toggle_btn" aria-expanded="false" aria-label="Toggle Menu" aria-controls="nav-menu"
+                    tabindex="0">
+                    <i class="menu ri-menu-4-fill" aria-hidden="true"></i>
+                    <i class="close ri-close-line" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <nav class="nav">
+                <ul id="nav-menu" class="nav-menu" hidden>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Attorneys</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Case Study</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Practice Areas</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Contact</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" tabindex="0">Faq</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main class="main">
+        <!-- Start Hero Section -->
+        <section class="hero section lazy-bg" data-background="../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg">
+
+            <div class="hero_content container">
+                <p class="text-16">Welcome To Lawe</p>
+                <h1 class="header-1">Most Successful Law Firm</h1>
+                <p class="text-16">
+                    we are committed to providing exceptional legal services with integrity, professionalism, and respect for our clients.
+                </p>
+                <a href="/" class="y-button">Learn More</a>
+            </div>
+                <!-- Extra part in the hero section -->
+            <div class="extra_hero">
+                
+                <div class="extra_hero_content container">
+                    <div class="overlay"></div>
+                    <div class="e_h_c_c">
+                        <div class="col-2 flex-c">
+                            <h2 class="header-2">The Attorneys You Want On Your Side</h2>
+                            <p class="text-16">
+                                Lorem ipsum dolor sit amet consectetur adicing.
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <a href="/" class="y-button">Free Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+    
+        <!-- Start About Us -->
+        <section class="section about">
+
+            <div class="container">
+                <div class="about_content g-16">
+                    <div class="flex-c col-2">
+                        <img src="../assets/lawer.jpg" alt="lawer" class="about_img">
+                    </div>
+                    <div class="col-2 flex-c">
+                        <h2 class="header-2">Our Promise</h2>
+                        <p class="text-16 d-text">At [Law Firm Name], we believe that our clients deserve not only expert legal
+                            representation but also a partnership built on trust, respect, and unwavering commitment. Our promise to you
+                            is rooted in our core values and reflects our dedication to providing exceptional legal services.</p>
+                
+                        <p class="text-16 d-text">At [Law Firm Name], our promise is more than words—it’s a commitment to providing you
+                            with the highest level of legal representation and client service.
+                        </p>
+                        <p class="text-16 y-text">We are honored to be your trusted legal partner, and we will work tirelessly to achieve the best possible results for you</p>
+                    </div>
+                </div>
+            </div>  
+            <div class="about_extra_part">
+                <div class="overlay"></div>
+                <!-- Stats -->
+                <ul class="container flex-r stats">
+                    <li class="stats_item">
+                        <span class="num-text">152 <span class="small-text">Succesful cases</span></span>
+                        <i class="ri-scales-3-fill y-text" role="presentation" aria-hidden="true"></i>
+                    </li>
+                    <li class="stats_item">
+                        <span class="num-text">312 <span class="small-text">Lorem case</span></span>
+                        <i class="ri-auction-fill y-text" role="presentation" aria-hidden="true"></i>
+                    </li>
+                    <li class="stats_item">
+                        <span class="num-text">513 <span class="small-text">Lorem deals</span></span>
+                        <i class="ri-team-fill y-text" role="presentation" aria-hidden="true"></i>
+                    </li>
+                    <li class="stats_item">
+                        <span class="num-text">25 <span class="small-text">Expert Team</span></span>
+                        <i class="ri-briefcase-fill y-text" role="presentation" aria-hidden="true"></i>
+                    </li>
+            
+                </ul>
+            </div>
+        </section>
+        <!-- End About Us Section -->
+        
+        <!-- Start Practice Areas Section -->
+        <section class="section practice container">
+            <div class="upper_section">
+                <h2 class="h2">Legal Practice Areas</h2>
+                <p class="sub-h2 text-16">
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+
+            <div class="lower_section">
+                <div class="grid">
+
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-fire-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Fire Accident</h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-truck-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Accident Injuries</h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                        
+                    </div>
+
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-group-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Family Law</h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-money-euro-box-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Financial Law</h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-leaf-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Drug Offenses</h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="grid_item">
+                        <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
+                            <i class="ri-money-euro-box-fill" aria-hidden="true" role="presentation"></i>
+                            <h3 class="header-3">Civil Law </h3>
+                            <p class="text-14">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum .
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Practice Areas Section -->
+
+        <!-- Start Testimonial Section -->
+        <section class="section testimonial">
+            <div class="overlay"></div>
+            <div class="testimonial_content container">
+                <div class="upper_section">
+                    <h2 class="h2">What Our Clients Say</h2>
+                    <p class="sub-h2 text-16">
+                        Lorem ipsum dolor sit consectetur.
+                    </p>
+                </div>
+                
+                <div class="lower_section testimonial_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testi_content swiper-slide flex-c">
+                                <i class="ri-double-quotes-l quote_icon" role="presentation" aria-hidden="true"></i>
+                            
+                                <p class="y-text text-14">
+                                    "I cannot thank [Law Firm Name] enough for their exceptional service. They handled my case with the utmost
+                                    professionalism and achieved a result that exceeded my expectations. The team was always available to answer
+                                    my questions and provided clear, honest advice throughout the process. I highly recommend them to anyone in
+                                    need of legal assistance."
+                                </p>
+                                <div class="testi_img">
+                                    <img src="../assets/avatar.jpg" alt="mily R" class="avatar_img">
+                                    <p class="avatar_title">
+                                        John D. <span class="occupation">Art Designer</span>
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="testi_content swiper-slide">
+                                <i class="ri-double-quotes-l quote_icon" role="presentation" aria-hidden="true"></i>
+                                <p class="y-text text-14">
+                                    "I cannot thank [Law Firm Name] enough for their exceptional service. They handled my case with the utmost
+                                    professionalism and achieved a result that exceeded my expectations. The team was always available to answer
+                                    my questions and provided clear, honest advice throughout the process. I highly recommend them to anyone in
+                                    need of legal assistance."
+                                </p>
+                                <div class="testi_img">
+                                    <img src="../assets/avatar.jpg" alt="mily R" class="avatar_img">
+                                    <p class="avatar_title">
+                                        John D. <span class="occupation">Art Designer</span>
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="testi_content swiper-slide">
+                                <i class="ri-double-quotes-l quote_icon" role="presentation" aria-hidden="true"></i>
+                            
+                                <p class="y-text text-14">
+                                    "I cannot thank [Law Firm Name] enough for their exceptional service. They handled my case with the utmost
+                                    professionalism and achieved a result that exceeded my expectations. The team was always available to answer
+                                    my questions and provided clear, honest advice throughout the process. I highly recommend them to anyone in
+                                    need of legal assistance."
+                                </p>
+                            
+                                <div class="testi_img">
+                                    <img src="../assets/avatar.jpg" alt="mily R" class="avatar_img">
+                                    <p class="avatar_title">
+                                        John D. <span class="occupation">Art Designer</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="testi_content swiper-slide">
+                                <i class="ri-double-quotes-l quote_icon" role="presentation" aria-hidden="true"></i>
+                            
+                                <p class="y-text text-14">
+                                    "From the moment I walked into [Law Firm Name], I felt confident that I was in good hands. The attorneys
+                                    treated me with respect and compassion, taking the time to understand my situation. Their dedication and
+                                    expertise were evident, and they fought tirelessly to protect my rights. I am incredibly grateful for their
+                                    support and would not hesitate to recommend them."
+                                </p>
+                            
+                                <div class="testi_img">
+                                    <img src="../assets/avatar.jpg" alt="mily R" class="avatar_img">
+                                    <p class="avatar_title">
+                                        Emily R.<span class="occupation">Art Designer</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="testi_content swiper-slide">
+                                <i class="ri-double-quotes-l quote_icon" role="presentation" aria-hidden="true"></i>
+                            
+                                <p class="y-text text-14">
+                                    "The attorneys at [Law Firm Name] are true professionals. They handled my case with sensitivity and provided
+                                    clear, effective legal guidance. Their commitment to their clients is unmatched, and I felt supported and
+                                    informed throughout the entire process. I am very pleased with the results and would recommend them to
+                                    anyone seeking top-notch legal representation."
+                                </p>
+                            
+                                <div class="testi_img">
+                                    <img src="../assets/avatar.jpg" alt="avatar" class="avatar_img">
+                                    <p class="avatar_title">
+                                        Sarah W. <span class="occupation">Art Designer</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonial section  -->
+        <!-- Supporting companies section -->
+        <section class="section supporting_componies">
+            <h2 class="sr-only">Supporting companies</h2>
+            <ul class="supporting_componies_content container flex-r g-16">
+                <li class="list_logo flex-r">
+                    <i class="logo-icon ri-google-fill" role="presentation" aria-hidden="true"></i>
+                    <span class="logo_name">LoremF</span>
+                </li>
+                <li class="list_logo flex-r">
+                    <i class="logo-icon ri-bank-line" role="presentation" aria-hidden="true"></i>
+                    <span class="logo_name">LoremX</span>
+                </li>
+                <li class="list_logo flex-r">
+                    <i class="logo-icon ri-government-fill" role="presentation" aria-hidden="true"></i>
+                    <span class="logo_name">LoremY</span>
+                </li>
+                <li class="list_logo flex-r">
+                    <i class="logo-icon ri-building-2-fill" role="presentation" aria-hidden="true"></i>
+                    <span class="logo_name">LoremZ</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Start Attorney section  -->
+        <section class="section attorney">
+            <div class="container">
+                <div class="upper_section">
+                    <h2 class="h2">Meet Our Attorney </h2>
+                    <p class="sub-h2 text-16">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div class="lower_section">
+                    <div class="cards_con">
+                        <div class="card">
+                            <img src="../assets/lawer.jpg" alt="David K." class="card_img">
+                            <p class="card_title">
+                                <span class="name">David K.</span> <span class="position">CEO Lawyer</span></p>
+                            <ul class="social_links">
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our facebookpage</span>
+                                        <i class="ri-facebook-fill" aria-hidden="true"></i> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our youtube page</span>
+                                        <i class="ri-youtube-fill" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our twitter page</span>
+                                        <i class="ri-twitter-fill" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="card">
+                            <img src="../assets/user.jpg" alt="Sarah W." class="card_img">
+                            <p class="card_title">
+                                <span class="name">Sarah W.</span><span class="position">CEO Lawyer</span></p>
+                            <ul class="social_links">
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our facebookpage</span>
+                                        <i class="ri-facebook-fill" aria-hidden="true"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our youtube page</span>
+                                        <i class="ri-youtube-fill" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our twitter page</span>
+                                        <i class="ri-twitter-fill" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="card">
+                            <img src="../assets/user.jpg" alt="Sarah W." class="card_img">
+                            <p class="card_title"><span class="name">Safwa W.</span> <span class="position">Family Lawyer</span></p>
+                            <ul class="social_links">
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our facebookpage</span>
+                                        <i class="ri-facebook-fill" aria-hidden="true"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our youtube page</span>
+                                        <i class="ri-youtube-fill" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our twitter page</span>
+                                        <i class="ri-twitter-fill" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="card">
+                            <img src="../assets/user.jpg" alt="Sarah W." class="card_img">
+                            <p class="card_title"><span class="name">Hannah W.</span><span class="position"> Lawyer</span></p>
+                            <ul class="social_links">
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our facebookpage</span>
+                                        <i class="ri-facebook-fill" aria-hidden="true"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our youtube page</span>
+                                        <i class="ri-youtube-fill" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                                        <span class="sr-only">Visit our twitter page</span>
+                                        <i class="ri-twitter-fill" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Address Section -->
+        <section class="section get-appointment">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="get-appointment-content">
+                    <div class="upper_section flex-c">
+                        <h2 class="h2">Need an Advice from Expert lawyers? Get an Appointment Today!
+                        </h2>
+                    </div>
+                    <div class="lower_section">
+                        <address class="flex-c g-16">
+                            <div class="flex-r">
+                                <p class="text-18">
+                                    <i class="address_icon y-text ri-phone-fill" role="presentation" aria-hidden="true"></i>
+                                    Call us for a quick help
+                                </p> 
+                                <a href="/" class="y-text phone" aria-label="call us">+12340067890</a>
+                            </div>
+                            <div >
+                                
+                                <a href="/" class="text-14" target="_blank" rel="noopener noreferrer" aria-label="Open Mail info@company.com"><i class="address_icon ri-mail-fill" role="presentation" aria-hidden="true"></i>info@company.com</a>
+                            </div>
+                            <div>
+                                <p class="text-14">
+                                    <i class="address_icon ri-map-pin-2-fill" role="presentation" aria-hidden="true"></i> 1234 Lawyer St, Suite 100
+                                    City, State, ZIP
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- End  Address Section -->
+
+        <!-- Start News  Section-->
+        <section class="section news">     
+                <div class="container">
+                    <div class="upper_section">
+                        <h2 class="h2">Latest News</h2>
+                        <p class="sub-h2 text-16">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="lower_section grid">
+                        <article class="article">
+                            <img src="../assets/major_victory.jpg" alt="" aria-hidden="true" class="article_img">
+                            <div class="article_content">
+                                <h3>
+                                    <a href="/" class="article_title y-text">Case Win: Major Victory in Contract Dispute</a>
+                                </h3>
+                                <time class="text-12" datetime="2024-08-09">August 9, 2024</time>
+                                <p class="text-14">
+                                    We are delighted to announce that Jane Doe has joined our firm as a Senior Partner. With over two decades of
+                                    experience in corporate law and litigation, Jane brings exceptional expertise and leadership to our team.
+                                    Her proven track record in complex litigation and high-profile corporate cases will further strengthen our
+                                    ability to deliver outstanding legal services to our clients. We are excited about the impact Jane will have
+                                    on our practice and our clients’ success.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <img src="../assets/agreement.jpg" alt="" aria-hidden="true" class="article_img">
+                            <div class="article_content">
+                                <h3>
+                                    <a href="/" class="article_title y-text">New Legal Guide: Estate Planning Essentials</a>
+                                </h3>
+                                <time class="text-12" datetime="2024-07-28">July 28, 2024</time>
+                                <p class="text-14">
+                                    We’re pleased to introduce our latest online resource: a comprehensive guide to estate planning. This guide
+                                    is designed to help individuals and families understand the crucial steps in creating a solid estate plan,
+                                    including the roles of wills, trusts, and powers of attorney. Whether you’re just beginning to consider your
+                                    options or need to update an existing plan, our guide offers practical advice to help you make informed
+                                    decisions about your future.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <img src="../assets/court.jpg" alt="" aria-hidden="true" class="article_img">
+                            <div class="article_content">
+                                <h3>
+                                    <a href="/" class="article_title y-text">Case Win: Major Victory in Contract Dispute</a>
+                                </h3>
+                                <time class="text-12" datetime="2024-07-15">July 15, 2024</time>
+                                <p class="text-14">
+                                    Our litigation team recently achieved a significant victory in a complex contract dispute case, securing a
+                                    favorable outcome for our client. The case involved intricate legal issues across multiple jurisdictions,
+                                    and our team’s relentless dedication and strategic approach were key to this success. This ruling not only
+                                    benefits our client but also sets a new standard in contract law, demonstrating our firm’s capability to
+                                    handle challenging legal matters with expertise and precision.
+                                </p>
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+        </section>
+        <!--End News  Section-->
+
+        <!-- Start Contact Section-->
+        <section class="section contact">
+            <div class="overlay"></div>
+            <div class="contact_content container">
+                <div class="upper_section">
+                    <h2 class="h2">Contact Us</h2>
+                    <p class="sub-h2 text-16">For any inquiries, get in touch!</p>
+                </div>
+                <div class="lower_section">
+                    <div class="contact_image">
+                        <!-- <img src="../assets/contact.jpg" alt="" aria-hidden="true"> -->
+                        <p class="text-14">Lorem ipsum dolor sit.</p>
+                        <h3 class="xl-text">WE'd love to hear you </h3>
+                        <p class="text-16">
+                            If you need legal assistance or have any inquiries, please fill out the form below. Our team will review your message
+                            and respond as soon as possible.
+                        </p>
+                    </div>
+                    <form action="/" method="post" id="contact_form" class="contact_form">
+                        <fieldset class="">
+                            <legend class="sr-only">Personal Information</legend>
+                            <div class="contact_box">
+                                <label for="name" class="label">Name</label>
+                                <input type="text" id="name" name="name" class="input" required>
+                            </div>
+                            <div class="contact_box">
+                                <label for="email" class="label">Email</label>
+                                <input type="email" id="email" name="email" class="input" required>
+                            </div>
+                
+                            <div class="contact_box">
+                                <label for="phone" class="label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="input" required>
+                            </div>
+                
+                            <div class="contact_box">
+                                <label for="message" class="label">Message</label>
+                                <textarea id="message" name="message" rows="4" class="input" required></textarea>
+                            </div>
+                
+                            <button type="submit" class="submit_btn y-button">Submit</button>
+                
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+                
+            
+        </section>
+        <!-- End Contact Section -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer class="footer section">
+        <div class="container">
+            <div class="ft_box">
+                <a href="/" class="flex-r logo-link">
+                    <i class="scale ri-scales-3-line" aria-hidden="true"></i>
+                    <p class="flex-c logo-text">Lawe <span class="sm-logo-text">Lawyer & Attorneys</span></p>
+                </a>
+                
+                <ul class="g-16 flex-r social_links">
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Visit our facebookpage</span>
+                            <i class="ri-facebook-fill" aria-hidden="true"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                        <span class="sr-only">Visit our youtube page</span>
+                        <i class="ri-youtube-fill" aria-hidden="true"></i>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="/" class="link" target="_blank" rel="noopener noreferrer">
+                            <span class="sr-only">Visit our twitter page</span>
+                            <i class="ri-twitter-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="ft_box">
+                <h3 class="header-3">Contact Info</h3>
+                <ul class="flex-start contact_info">
+                    <li>
+                        <i class="y-icon ri-mail-fill" aria-hidden="true"></i>
+                        <a href="/" class="link">info@company.com</a>
+                    </li>
+                    <li>
+                        <i class="y-icon ri-phone-fill" aria-hidden="true"></i>
+                        <a href="/" aria-label="call us" class="link">+12340067890</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="ft_box">
+                <h3 class="header-3">Useful Links</h3>
+                <ul class="flex-start">
+                    <li><a href="/" class="link">About Us</a></li>
+                    <li><a href="/" class="link">Attorneys</a></li>
+                    <li><a href="/" class="link">Case Study</a></li>
+                    <li><a href="/" class="link">Practice Areas</a></li>
+                    <li><a href="/" class="link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+</html>

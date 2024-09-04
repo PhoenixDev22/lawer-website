@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.y-button {
+    margin-top: toRem(30);
+    border: 1px solid $secondary-clr;
+    font-size: toRem(15);
+    padding: toRem(9) toRem(18);
+    background-color: $secondary-clr;
+    color: $white;
+    font-weight: 500;
+    text-align: center;
+    width: toRem(170);
+    transition: $transition;
+    &:hover {
+        background-color: transparent;
+        color: $secondary-clr;
+    }
+}

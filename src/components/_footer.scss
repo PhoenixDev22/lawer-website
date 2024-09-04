@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.footer {
+    background-color: $main-clr ;
+}
+.footer .container {
+    // @include flex($direction: column, $align: center, $justify: center);
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media(lg) {
+        grid-template-columns: 190px repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+.footer .logo-text {
+    color: $white;
+}
+.ft_box {
+    @include flex($direction: column, $align: flex-start, $justify: flex-start);
+    margin: 0.8125rem 0;
+}
+.ft_box .header-3 {
+    margin: 0.8125rem toRem(8);
+}
+.ft_box .link {
+    margin: .5rem 0;
+}
+.flex-start {
+    @include flex($direction: column, $align: flex-start, $justify: flex-start);
+}

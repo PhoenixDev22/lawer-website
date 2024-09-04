@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.skip-content {
+    display: inline-block;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    transform: translateX(-200%);
+    z-index: 200;
+    background-color: $main-clr;
+    padding: 1em 2em;
+    color: $white;
+    font-size: 1rem;
+    text-decoration: 0.1em solid;
+
+    @include prefers-motion {
+        transition: transform $transition;
+    }
+}
+
+.skip-content:focus,
+.skip-content:focus-visible {
+    transform: translate(0);
+    outline: 0.2em solid $main-clr;
+    outline-offset: 0.25em;
+}

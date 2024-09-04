@@ -1,0 +1,86 @@
+@use "../abstracts" as *;
+.contact {
+    background-image: url(../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(40px);
+}
+.contact_image {
+    width: 50%;
+    // background-color: rgba(177, 151, 96, .6);
+    display: none;
+    @include media(lg) {
+        background-color: $secondary-clr;
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+.contact .sub-h2 {
+    color: $white
+}
+.contact_content {
+    position: relative;
+    z-index: 2;
+}
+.contact .lower_section {
+    margin-top: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+}
+.contact_form {
+    background-color: rgba(32, 51, 83, .6);
+    padding: 3rem 2rem; 
+    // max-width: toRem(500);
+    width: 100%;
+    @include media(lg) {
+        width: 50%;
+    }
+} 
+.contact_image .text-14 {
+    color: $main-clr;
+    font-weight: 500;
+
+}
+.xl-text {
+    font-size: 4rem;
+    color: $main-clr;
+    line-height: 1.2;
+}
+.contact_box {
+    margin-bottom: 1rem;
+}
+.label {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+    display: block;
+}
+.input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $secondary-clr;
+    background-color: $white;
+    border: 3px solid $white;
+    transition: $transition;
+    &:hover {
+        border: 3px solid $secondary-clr;
+    }
+}
+fieldset {
+    border: none;
+}
+textarea {
+    outline: none;
+    resize: none;
+    box-shadow: none;
+}
