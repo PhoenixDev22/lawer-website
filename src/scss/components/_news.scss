@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .article {
-    max-width: toRem(280);
+    width: 100%;
     background-color: $main-clr;
     margin: 0 0.5rem;
 }

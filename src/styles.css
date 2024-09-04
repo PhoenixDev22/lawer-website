@@ -713,7 +713,7 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 15px;
   place-items: center;
   margin: 2.2rem 0;
@@ -721,7 +721,7 @@ header {
 @media screen and (min-width: 992px) {
   .grid {
     margin-top: 3.4rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
   }
 }
 
@@ -1025,7 +1025,7 @@ header {
 }
 
 .article {
-  max-width: 17.5rem;
+  width: 100%;
   background-color: #203351;
   margin: 0 0.5rem;
 }
