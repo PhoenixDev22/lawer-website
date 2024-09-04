@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
+
+body {
+    font-family: $main-font-family;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: $white;
+}

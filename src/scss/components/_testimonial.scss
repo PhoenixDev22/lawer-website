@@ -1,0 +1,101 @@
+@use "../abstracts/" as *;
+
+.testimonial {
+    background-image: url('../../assets/testimonial_bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.testimonial .sub-h2 {
+    color: $white;
+}
+.testimonial_slider {
+    margin-top: 3rem;
+    @include media(lg) {
+        margin-top: 4rem
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-clr;
+    opacity: .8;
+    z-index: 1;
+}
+.swiper-wrapper{
+    padding: 1rem 2rem 3rem;
+}
+.testimonial_content{
+    position: relative;
+    z-index: 2;
+}
+.testi_img {
+    @include flex($direction: row, $justify: flex-start, $align: center);
+    gap: toRem(10);
+    margin-top: 1rem;
+}
+.quote_icon {
+    color: $secondary-clr;
+    font-size: toRem(25);
+    margin-bottom: 2rem;
+
+}
+.testi_content {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    max-width: 360px;
+    width: 100%;
+    @include media(sm) {
+        max-width: 500px;
+    }
+    @include media(md) {
+        max-width: toRem(480);
+    }
+}
+.avatar_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: toRem(5);
+}
+.avatar_title {
+    color: $secondary-clr;
+}
+.occupation {
+    display: block;
+    color: $white;
+    font-size: toRem(10);
+}
+.swiper-pagination-bullet {
+    background: $white !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+    background: $secondary-clr !important;
+}
+.supporting_componies {
+    background: $secondary-clr;
+    padding: 2.5rem 2rem;
+}
+.list_logo {
+    color: $white;
+}
+.logo-icon{
+    font-size: 1.4rem;
+    @include media(lg) {
+        font-size: 2rem;
+    }
+}
+.logo_name {
+    font-size: .8rem;
+    margin-left: 5px;
+    font-weight: 600;
+    @include media(lg) {
+        font-size: 1rem;
+    }
+}

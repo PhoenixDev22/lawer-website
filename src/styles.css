@@ -131,11 +131,6 @@ body {
   flex-direction: column;
 }
 
-::-moz-selection {
-  color: #f5f5f5;
-  background-color: #2e4a76;
-}
-
 ::selection {
   color: #f5f5f5;
   background-color: #2e4a76;
@@ -154,6 +149,10 @@ body {
   .section {
     padding-bottom: 5rem;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 header {
@@ -179,19 +178,19 @@ header {
   }
 }
 
-.top a,
-.top i {
+.link,
+.y-icon {
   color: #b19760;
   font-size: 0.875rem;
 }
 
-.top .social_links i,
-.ul-2:first-child i {
-  margin-left: 8px;
+.social_links i,
+.y-icon {
+  margin-left: 5px;
 }
 
 .g-16 {
-  gap: 16px;
+  gap: 10px;
 }
 
 .toggle_btn {
@@ -257,7 +256,7 @@ header {
   padding: 1.25rem;
   font-size: 1rem;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 @media screen and (min-width: 992px) {
   .menu-item a {
@@ -316,13 +315,12 @@ header {
 
 @media screen and (min-width: 992px) {
   .button-container {
-    padding: 1.4rem 0;
+    padding: 1.4rem 1.5rem;
   }
 }
 
 .hero {
   width: 100%;
-  background-image: url("../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -476,6 +474,48 @@ header {
   }
 }
 
+.footer {
+  background-color: #203351;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 992px) {
+  .footer .container {
+    grid-template-columns: 190px repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.footer .logo-text {
+  color: #f5f5f5;
+}
+
+.ft_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0.8125rem 0;
+}
+
+.ft_box .header-3 {
+  margin: 0.8125rem 0.5rem;
+}
+
+.ft_box .link {
+  margin: 0.5rem 0;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .skip-content {
   display: inline-block;
   position: fixed;
@@ -487,12 +527,11 @@ header {
   padding: 1em 2em;
   color: #f5f5f5;
   font-size: 1rem;
-  -webkit-text-decoration: 0.1em solid;
-          text-decoration: 0.1em solid;
+  text-decoration: 0.1em solid;
 }
 @media (prefers-reduced-motion: no-preference) {
   .skip-content {
-    transition: transform all 0.3s ease;
+    transition: transform 0.3s ease;
   }
 }
 
@@ -511,8 +550,9 @@ header {
   background-color: #b19760;
   color: #f5f5f5;
   font-weight: 500;
+  text-align: center;
   width: 10.625rem;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 .y-button:hover {
   background-color: transparent;
@@ -646,6 +686,7 @@ header {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.2;
+  text-align: center;
   margin-bottom: 35px;
 }
 @media screen and (min-width: 992px) {
@@ -712,7 +753,7 @@ header {
   background-color: #203351;
   opacity: 0.8;
   z-index: -1;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .in-grid_item:hover::before {
@@ -734,7 +775,7 @@ header {
 
 .text-14 {
   font-size: 0.875rem;
-  max-width: 80%;
+  color: #f5f5f5;
 }
 
 .testimonial {
@@ -770,7 +811,7 @@ header {
 }
 
 .swiper-wrapper {
-  padding: 3rem 2rem;
+  padding: 1rem 2rem 3rem;
 }
 
 .testimonial_content {
@@ -795,10 +836,17 @@ header {
 
 .testi_content {
   width: 100%;
+  padding: 1rem 1.5rem;
+  max-width: 360px;
+  width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .testi_content {
-    width: 50%;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testi_content {
     max-width: 30rem;
   }
 }
@@ -807,6 +855,7 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
   margin-left: 0.3125rem;
 }
 
@@ -861,9 +910,15 @@ header {
 .cards_con {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+  place-items: center;
+  gap: 1rem 1.5rem;
   padding: 3rem 0;
+}
+@media screen and (min-width: 992px) {
+  .cards_con {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
 }
 
 .card {
@@ -874,8 +929,7 @@ header {
 .card_img {
   width: 100%;
   height: 15.625rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
@@ -927,12 +981,167 @@ header {
   color: #b19760;
 }
 
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
+.get-appointment {
+  background-image: url("../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.no-scroll {
+.get-appointment-content {
+  position: relative;
+  z-index: 2;
+}
+
+.get-appointment .h2 {
+  max-width: 42rem;
+}
+
+.address_icon {
+  margin-right: 1rem;
+}
+
+.phone {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.text-18 {
+  color: #f5f5f5;
+  font-size: 1.125rem;
+}
+
+.article {
+  max-width: 22.5rem;
+  background-color: #203351;
+}
+
+.article .text-14 {
+  white-space: nowrap;
   overflow: hidden;
-}/*# sourceMappingURL=styles.css.map */
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.article_content {
+  padding: 1.5rem 1rem;
+}
+
+.article_img {
+  object-fit: cover;
+  height: 250px;
+  display: block;
+}
+
+.article_title {
+  font-weight: 500;
+}
+
+.text-12 {
+  margin: 0.5rem 0 1rem;
+  display: block;
+  font-size: 0.75rem;
+  color: #f5f5f5;
+}
+
+.contact {
+  background-image: url(../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+}
+
+.contact_image {
+  width: 50%;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .contact_image {
+    background-color: #b19760;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.contact .sub-h2 {
+  color: #f5f5f5;
+}
+
+.contact_content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact .lower_section {
+  margin-top: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display: flex;
+}
+
+.contact_form {
+  background-color: rgba(32, 51, 83, 0.6);
+  padding: 3rem 2rem;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .contact_form {
+    width: 50%;
+  }
+}
+
+.contact_image .text-14 {
+  color: #203351;
+  font-weight: 500;
+}
+
+.xl-text {
+  font-size: 4rem;
+  color: #203351;
+  line-height: 1.2;
+}
+
+.contact_box {
+  margin-bottom: 1rem;
+}
+
+.label {
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b19760;
+  background-color: #f5f5f5;
+  border: 3px solid #f5f5f5;
+  transition: 0.3s ease;
+}
+.input:hover {
+  border: 3px solid #b19760;
+}
+
+fieldset {
+  border: none;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

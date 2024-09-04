@@ -1,8 +1,0 @@
-@use "sass:math";
-
-@function toRem($number) {
-    @if unitless($number) {
-        @return math.div($number, 16) * 1rem;
-    }
-    @error "'#{$number} must no have any unit'";
-}

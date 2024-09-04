@@ -1,0 +1,58 @@
+@use "../abstracts" as  *;
+
+.cards_con {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+    place-items: center;
+    gap: 1rem 1.5rem;
+    padding: 3rem 0;
+    @include media(lg) {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+.card {
+    width: 100%;
+    max-width: toRem(230);
+}
+.card_img {
+    width: 100%;
+    height: toRem(250);
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.position {
+    color: $secondary-clr;
+    font-size: toRem(12);
+    display: block;
+}
+.name {
+    color: $main-clr;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.social_links {
+    margin: 1rem 0;
+    @include flex($direction:row, $align: center, $justify: flex-start)
+}
+.social_links li {
+    margin-right: 6px;
+}
+.card .social_links i {
+    font-size: 1.5rem;
+}
+.card .social_links a {
+    padding: 4px 6px;
+}
+.card .social_links li:nth-child(2n + 1) {
+    background-color: $secondary-clr;
+}
+.card .social_links li:nth-child(2n) {
+    background-color: $main-clr;;
+}
+.card .social_links li:nth-child(2n + 1) a {
+    color: $main-clr
+}
+.card .social_links li:nth-child(2n) a{
+    color: $secondary-clr;
+}
