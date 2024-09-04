@@ -1,8 +1,9 @@
 @use '../abstracts' as *;
 
 .article {
-    max-width: toRem(360);
+    max-width: toRem(280);
     background-color: $main-clr;
+    margin: 0 0.5rem;
 }
 .article .text-14 {
     white-space: nowrap;

@@ -8,12 +8,12 @@
     gap: 1rem 1.5rem;
     padding: 3rem 0;
     @include media(lg) {
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
 .card {
     width: 100%;
-    max-width: toRem(230);
+    max-width: toRem(240);
 }
 .card_img {
     width: 100%;
