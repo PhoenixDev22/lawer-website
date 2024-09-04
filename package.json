@@ -1,16 +1,16 @@
 {
-    "name": "lawer_website",
+    "name": "lawyer_website",
     "version": "1.0.0",
     "description": "A sample Project Of Attorneys",
     "main": "main.js",
     "scripts": {
         "build": "npm-run-all --serial build:*",
-        "build:scss": "sass src/styles.scss dist/styles.css",
+        "build:scss": "sass src/scss/styles.scss src/styles.css",
         "watch": "npm-run-all --parallel watch:*",
-        "watch:scss": "onchange 'src/**/*.scss' -- pnpm run build:scss",
+        "watch:scss": "onchange 'src/**/**/*.scss' -- pnpm run build:scss",
         "serve": "live-server dist",
-        "prefix:css": "postcss dist/styles.css --use autoprefixer -o dist/styles.prefixes.css",
-        "minify:css": "postcss dist/styles.prefixes.css --use cssnano -o dist/styles.min.css"
+        "prefix:css": "postcss src/styles.css --use autoprefixer -o src/styles.prefixes.css",
+        "minify:css": "postcss src/styles.prefixes.css --use cssnano -o src/styles.min.css"
     },
     "author": "",
     "license": "ISC",

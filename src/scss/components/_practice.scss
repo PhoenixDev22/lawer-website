@@ -16,7 +16,7 @@
     }
 }
 .h2::before {
-    content: url(../../assets/scale.svg);
+    content: url('assets/scale.svg');
     position: absolute;
     bottom: -35px;
     left: 50%;
@@ -31,8 +31,9 @@
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px , 1fr));
     gap: 15px;
+    place-items: center;
     margin: 2.2rem 0;
     @include media(lg) {
         margin-top: 3.4rem;
@@ -40,7 +41,7 @@
 }
 .grid_item {
     position: relative;
-    background-image: url('../../assets/money.jpg');
+    background-image: url('assets/money.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -27,4 +27,5 @@
 }
 .flex-start {
     @include flex($direction: column, $align: flex-start, $justify: flex-start);
+    margin-left: .5rem;;
 }

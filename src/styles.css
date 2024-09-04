@@ -184,7 +184,6 @@ header {
   font-size: 0.875rem;
 }
 
-.social_links i,
 .y-icon {
   margin-left: 5px;
 }
@@ -407,7 +406,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../assets/hero.jpg");
+    background-image: url("assets/hero.jpg");
   }
 }
 
@@ -514,6 +513,7 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  margin-left: 0.5rem;
 }
 
 .skip-content {
@@ -619,7 +619,7 @@ header {
 }
 
 .about_extra_part {
-  background: #203351 url("../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+  background: #203351 url("assets/law-firm.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -696,7 +696,7 @@ header {
 }
 
 .h2::before {
-  content: url(../../assets/scale.svg);
+  content: url("assets/scale.svg");
   position: absolute;
   bottom: -35px;
   left: 50%;
@@ -713,8 +713,9 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
+  place-items: center;
   margin: 2.2rem 0;
 }
 @media screen and (min-width: 992px) {
@@ -725,7 +726,7 @@ header {
 
 .grid_item {
   position: relative;
-  background-image: url("../../assets/money.jpg");
+  background-image: url("assets/money.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -779,7 +780,7 @@ header {
 }
 
 .testimonial {
-  background-image: url("../../assets/testimonial_bg.jpeg");
+  background-image: url("assets/testimonial_bg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -811,7 +812,7 @@ header {
 }
 
 .swiper-wrapper {
-  padding: 1rem 2rem 3rem;
+  padding: 1rem 0 3rem;
 }
 
 .testimonial_content {
@@ -880,7 +881,7 @@ header {
 
 .supporting_componies {
   background: #b19760;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 0;
 }
 
 .list_logo {
@@ -910,7 +911,7 @@ header {
 .cards_con {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   place-items: center;
   gap: 1rem 1.5rem;
   padding: 3rem 0;
@@ -941,8 +942,13 @@ header {
 
 .name {
   color: #203351;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+@media screen and (min-width: 992px) {
+  .name {
+    font-size: 1.4rem;
+  }
 }
 
 .social_links {
@@ -958,7 +964,12 @@ header {
 }
 
 .card .social_links i {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .card .social_links i {
+    font-size: 1.5rem;
+  }
 }
 
 .card .social_links a {
@@ -982,7 +993,7 @@ header {
 }
 
 .get-appointment {
-  background-image: url("../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg");
+  background-image: url("assets/law-firm.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1032,6 +1043,7 @@ header {
   object-fit: cover;
   height: 250px;
   display: block;
+  width: 100%;
 }
 
 .article_title {
@@ -1046,7 +1058,7 @@ header {
 }
 
 .contact {
-  background-image: url(../../assets/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg);
+  background-image: url("assets/law-firm.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,0 +1,1 @@
+ toggleBtn.getAttribute(‘aria-expanded') return string that ’s why I used compare it to true to return value boolean

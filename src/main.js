@@ -12,25 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('no-scroll');
     })
 });
+// Lazy Loading for images only one image "Hero image"
 document.addEventListener("DOMContentLoaded", function () {
     const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
 
     const lazyLoadBackground = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-        let lazyBg = entry.target;
-        lazyBg.style.backgroundImage = `url(${lazyBg.dataset.background})`;
-        observer.unobserve(lazyBg); // Stop observing once the image is loaded
-        }
-    });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let lazyBg = entry.target;
+                lazyBg.style.backgroundImage = `url(${lazyBg.dataset.background})`;
+                observer.unobserve(lazyBg); // Stop observing once the image is loaded
+            }
+        });
     };
 
     const observer = new IntersectionObserver(lazyLoadBackground, {
-    rootMargin: "0px 0px 200px 0px"  // Load the background slightly before it comes into view
+        rootMargin: "0px 0px 200px 0px"  // Load the background slightly before it comes into view
     });
 
     lazyBackgrounds.forEach(bg => {
-    observer.observe(bg);
+        observer.observe(bg);
     });
 });
 // Initialize Swiper
@@ -40,15 +41,15 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 80,
     centeredSlides: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true, 
     },
+
     breakpoints: {
         0: { // Mobile screens (below 992px)
-        slidesPerView: "auto",  // Show 1 slide per view
-        centeredSlides: true, // Center the slide
+            slidesPerView: "auto",  
+            centeredSlides: true, 
         },
         800: {
             slidesPerView: 2,
