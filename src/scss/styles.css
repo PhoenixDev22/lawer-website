@@ -131,6 +131,11 @@ body {
   flex-direction: column;
 }
 
+::-moz-selection {
+  color: #f5f5f5;
+  background-color: #2e4a76;
+}
+
 ::selection {
   color: #f5f5f5;
   background-color: #2e4a76;
@@ -528,7 +533,8 @@ header {
   padding: 1em 2em;
   color: #f5f5f5;
   font-size: 1rem;
-  text-decoration: 0.1em solid;
+  -webkit-text-decoration: 0.1em solid;
+          text-decoration: 0.1em solid;
 }
 @media (prefers-reduced-motion: no-preference) {
   .skip-content {
@@ -672,15 +678,6 @@ header {
 .small-text {
   font-size: 10px;
   display: block;
-}
-
-.practice {
-  padding-top: 0;
-}
-@media screen and (min-width: 992px) {
-  .practice {
-    padding-top: 6rem;
-  }
 }
 
 .upper_section {
@@ -867,7 +864,8 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 0.3125rem;
 }
 
@@ -941,7 +939,8 @@ header {
 .card_img {
   width: 100%;
   height: 15.625rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 1rem;
 }
 
@@ -1053,7 +1052,8 @@ header {
 }
 
 .article_img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 250px;
   display: block;
   width: 100%;
@@ -1077,7 +1077,8 @@ header {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
 }
 
 .contact_image {
@@ -1167,6 +1168,4 @@ textarea {
   outline: none;
   resize: none;
   box-shadow: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

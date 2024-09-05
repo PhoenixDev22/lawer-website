@@ -24,6 +24,7 @@
     @include flex($direction:column, $justify: center, $align: center);
     position: relative;
     text-align: center;
+    padding-bottom: 4rem;
     @include media(lg) {
         align-items: flex-start;
         justify-content: flex-start;
