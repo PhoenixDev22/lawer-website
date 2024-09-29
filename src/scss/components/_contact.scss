@@ -84,3 +84,8 @@ textarea {
     resize: none;
     box-shadow: none;
 }
+.error_text {
+    display: block;
+    color: red;
+    font-size: toRem(13);
+}

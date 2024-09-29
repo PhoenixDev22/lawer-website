@@ -79,11 +79,16 @@
     background: $secondary-clr !important;
 }
 .supporting_componies {
+    @include flex($direction: row, $justify: center, $align: center);
     background: $secondary-clr;
     padding: 2.5rem 0;
 }
 .list_logo {
     color: $white;
+    margin: 0 1rem;
+    @include media(lg) {
+        margin: 0 1.5rem;;
+    }
 }
 .logo-icon{
     font-size: 1.4rem;

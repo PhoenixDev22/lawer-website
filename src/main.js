@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(bg);
     });
 });
+
 // Initialize Swiper
 const swiper = new Swiper('.swiper', {
     grabCursor: true,
@@ -57,3 +58,80 @@ const swiper = new Swiper('.swiper', {
         },
     },
 });
+
+// Initialize AOS
+AOS.init();
+
+// Validate the form 
+const form = document.getElementById('contact_form');
+const userNameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const submitFormBtn = document.getElementById('submitForm');
+const regExpName = /^[a-zA-Z]+([ '][a-zA-Z]+)*$/;
+const regExpEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+// Create Error Message 
+const createErrorMessage = (input, text) => {
+    const errorElement = document.createElement('p');
+
+    errorElement.textContent = text;
+    errorElement.classList.add('error_text');
+    input.appendChild(errorElement)
+}
+
+// check empty entry
+const checkEntries = (userName, email, message) => {
+    const emptyEntry = 'This field is required';
+    const noValidEntry = 'This field is invalid';
+
+    const isNameValid = regExpName.test(userName);
+    const isEmailValid = regExpEmail.test(email);
+    const isMessageValid = message.trim().length != 0;
+
+    const allInputs = [userNameInput, emailInput,  messageInput];
+    allInputs.forEach(ele => {
+        const id = ele.id;
+        const input = ele.parentElement;
+
+        switch (id) {
+            case 'name': 
+                if (userName.length === 0 ){
+                    createErrorMessage(input, emptyEntry) 
+                } else if (!isNameValid) {
+                    createErrorMessage(input, noValidEntry) 
+                }
+            break;
+            case 'email': 
+            if (email.length === 0 ){
+                createErrorMessage(input, emptyEntry) 
+            } else if (!isEmailValid) {
+                createErrorMessage(input, noValidEntry) 
+            }
+            break;
+            case 'message': 
+                if (!isMessageValid){
+                    createErrorMessage(input, emptyEntry) 
+                }            
+            break;
+        }
+    })
+}
+
+const removeErrorMessage = () => {
+    const allErrorMessage = [...document.querySelectorAll('.error_text')];
+    allErrorMessage.forEach(error => error.remove()) 
+}
+
+submitFormBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    
+    const userName = userNameInput.value;
+    const userEmail = emailInput.value;
+    const message = messageInput.value;
+
+    removeErrorMessage();
+    checkEntries(userName, userEmail,  message);
+})
+
+ //'Your inquiry is sent, Our team will get in touch with you soon.'

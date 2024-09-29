@@ -18,7 +18,10 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-
+    
+    <!-- Animate On scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <!-- Main js file -->
     <script src="main.js" defer></script>
     <title>Attorneys</title>
@@ -26,7 +29,7 @@
 <body>
     <!-- Start Header -->
 
-    <header class="header">
+    <header id="home" class="header">
         <div class="top">
             <div class="container">
                 <ul class="g-16 flex-r contact_info">
@@ -76,26 +79,26 @@
             <nav class="nav">
                 <ul id="nav-menu" class="nav-menu" hidden>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">Home</a>
+                        <a href="#home" tabindex="0">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">About Us</a>
+                        <a href="#about" tabindex="0">About Us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">Attorneys</a>
+                        <a href="#attorney" tabindex="0">Attorneys</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">Case Study</a>
+                        <a href="#news" tabindex="0">Case Study</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">Practice Areas</a>
+                        <a href="#practice" tabindex="0">Practice Areas</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/" tabindex="0">Contact</a>
+                        <a href="#contact" tabindex="0">Contact</a>
                     </li>
-                    <li class="menu-item">
+                    <!-- <li class="menu-item">
                         <a href="/" tabindex="0">Faq</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div> 
@@ -107,7 +110,7 @@
         <!-- Start Hero Section -->
         <section class="hero section lazy-bg" data-background="assets/law-firm.jpg">
 
-            <div class="hero_content container">
+            <div class="hero_content container" data-aos="fade-down" data-aos-duration="1000">
                 <p class="text-16">Welcome To Lawe</p>
                 <h1 class="header-1">Most Successful Law Firm</h1>
                 <p class="text-16">
@@ -118,7 +121,7 @@
                 <!-- Extra part in the hero section -->
             <div class="extra_hero">
                 
-                <div class="extra_hero_content container">
+                <div class="extra_hero_content container" data-aos-duration="1000" data-aos="fade-up">
                     <div class="overlay"></div>
                     <div class="e_h_c_c">
                         <div class="col-2 flex-c">
@@ -137,14 +140,14 @@
         <!-- End Hero Section -->
     
         <!-- Start About Us -->
-        <section class="section about">
+        <section id="about" class="section about">
 
             <div class="container">
                 <div class="about_content g-16">
-                    <div class="flex-c col-2">
+                    <div class="flex-c col-2" data-aos="fade-right" data-aos-duration="1000">
                         <img src="assets/lawer.jpg" alt="lawer" class="about_img">
                     </div>
-                    <div class="col-2 flex-c">
+                    <div class="col-2 flex-c" data-aos="fade-left" data-aos-duration="1000">
                         <h2 class="header-2">Our Promise</h2>
                         <p class="text-16 d-text">At [Law Firm Name], we believe that our clients deserve not only expert legal
                             representation but also a partnership built on trust, respect, and unwavering commitment. Our promise to you
@@ -161,19 +164,19 @@
                 <div class="overlay"></div>
                 <!-- Stats -->
                 <ul class="container flex-r stats">
-                    <li class="stats_item">
+                    <li class="stats_item" data-aos="zoom-in-up" data-aos-delay="300">
                         <span class="num-text">152 <span class="small-text">Succesful cases</span></span>
                         <i class="ri-scales-3-fill y-text" role="presentation" aria-hidden="true"></i>
                     </li>
-                    <li class="stats_item">
+                    <li class="stats_item" data-aos="zoom-in-up" data-aos-delay="600">
                         <span class="num-text">312 <span class="small-text">Lorem case</span></span>
                         <i class="ri-auction-fill y-text" role="presentation" aria-hidden="true"></i>
                     </li>
-                    <li class="stats_item">
+                    <li class="stats_item" data-aos="zoom-in-up" data-aos-delay="900">
                         <span class="num-text">513 <span class="small-text">Lorem deals</span></span>
                         <i class="ri-team-fill y-text" role="presentation" aria-hidden="true"></i>
                     </li>
-                    <li class="stats_item">
+                    <li class="stats_item" data-aos="zoom-in-up" data-aos-delay="1200">
                         <span class="num-text">25 <span class="small-text">Expert Team</span></span>
                         <i class="ri-briefcase-fill y-text" role="presentation" aria-hidden="true"></i>
                     </li>
@@ -184,7 +187,7 @@
         <!-- End About Us Section -->
         
         <!-- Start Practice Areas Section -->
-        <section class="section practice container">
+        <section id="practice" class="section practice container">
             <div class="upper_section">
                 <h2 class="h2">Legal Practice Areas</h2>
                 <p class="sub-h2 text-16">
@@ -195,7 +198,7 @@
             <div class="lower_section">
                 <div class="grid">
 
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="zoom-out-left"  data-aos-duration="600">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-fire-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Fire Accident</h3>
@@ -205,7 +208,7 @@
                         </a>
                     </div>
 
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="zoom-out-left"  data-aos-duration="600" data-aos-delay="300">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-truck-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Accident Injuries</h3>
@@ -216,7 +219,7 @@
                         
                     </div>
 
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="zoom-out-left"  data-aos-duration="600" data-aos-delay="600">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-group-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Family Law</h3>
@@ -226,7 +229,7 @@
                         </a>
                     </div>
 
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="zoom-out-right" data-aos-duration="600" data-aos-delay="900">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-money-euro-box-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Financial Law</h3>
@@ -235,7 +238,7 @@
                             </p>
                         </a>
                     </div>
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="zoom-out-right" data-aos-duration="600" data-aos-delay="1200">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-leaf-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Drug Offenses</h3>
@@ -245,7 +248,7 @@
                         </a>
                     </div>
 
-                    <div class="grid_item">
+                    <div class="grid_item" data-aos="fade-up" data-aos="zoom-out-right" data-aos-duration="600" data-aos-delay="1500">
                         <a href="/" rel="noopener noreferrer"  target="_blank"  class="in-grid_item">
                             <i class="ri-money-euro-box-fill" aria-hidden="true" role="presentation"></i>
                             <h3 class="header-3">Civil Law </h3>
@@ -261,7 +264,7 @@
         <!-- End Practice Areas Section -->
 
         <!-- Start Testimonial Section -->
-        <section class="section testimonial">
+        <section id="testimonial" class="section testimonial">
             <div class="overlay"></div>
             <div class="testimonial_content container">
                 <div class="upper_section">
@@ -374,19 +377,19 @@
         <section class="section supporting_componies">
             <h2 class="sr-only">Supporting companies</h2>
             <ul class="supporting_componies_content container flex-r g-16">
-                <li class="list_logo flex-r">
+                <li class="list_logo flex-r" data-aos="zoom-out-down" data-aos-duration="600" >
                     <i class="logo-icon ri-google-fill" role="presentation" aria-hidden="true"></i>
                     <span class="logo_name">LoremF</span>
                 </li>
-                <li class="list_logo flex-r">
+                <li class="list_logo flex-r" data-aos="zoom-out-down" data-aos-duration="600" data-aos-delay="300">
                     <i class="logo-icon ri-bank-line" role="presentation" aria-hidden="true"></i>
                     <span class="logo_name">LoremX</span>
                 </li>
-                <li class="list_logo flex-r">
+                <li class="list_logo flex-r" data-aos="zoom-out-down" data-aos-duration="600" data-aos-delay="600">
                     <i class="logo-icon ri-government-fill" role="presentation" aria-hidden="true"></i>
                     <span class="logo_name">LoremY</span>
                 </li>
-                <li class="list_logo flex-r">
+                <li class="list_logo flex-r" data-aos="zoom-out-down" data-aos-duration="600" data-aos-delay="900">
                     <i class="logo-icon ri-building-2-fill" role="presentation" aria-hidden="true"></i>
                     <span class="logo_name">LoremZ</span>
                 </li>
@@ -394,7 +397,7 @@
         </section>
 
         <!-- Start Attorney section  -->
-        <section class="section attorney">
+        <section id="attorney" class="section attorney">
             <div class="container">
                 <div class="upper_section">
                     <h2 class="h2">Meet Our Attorney </h2>
@@ -404,7 +407,7 @@
                 </div>
                 <div class="lower_section">
                     <div class="cards_con">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-out-up" data-aos-duration="600">
                             <img src="assets/lawer.jpg" alt="David K." class="card_img">
                             <p class="card_title">
                                 <span class="name">David K.</span> <span class="position">CEO Lawyer</span></p>
@@ -430,7 +433,7 @@
                             </ul>
                         </div>
                 
-                        <div class="card">
+                        <div class="card"  data-aos="zoom-out-up" data-aos-duration="600" data-aos-delay="300">
                             <img src="assets/user.jpg" alt="Sarah W." class="card_img">
                             <p class="card_title">
                                 <span class="name">Sarah W.</span><span class="position">CEO Lawyer</span></p>
@@ -456,7 +459,7 @@
                             </ul>
                         </div>
                 
-                        <div class="card">
+                        <div class="card"  data-aos="zoom-out-up" data-aos-duration="600" data-aos-delay="600">
                             <img src="assets/user.jpg" alt="Sarah W." class="card_img">
                             <p class="card_title"><span class="name">Safwa W.</span> <span class="position">Family Lawyer</span></p>
                             <ul class="social_links">
@@ -481,7 +484,7 @@
                             </ul>
                         </div>
                 
-                        <div class="card">
+                        <div class="card"  data-aos="zoom-out-up" data-aos-duration="600" data-aos-delay="900">
                             <img src="assets/user.jpg" alt="Sarah W." class="card_img">
                             <p class="card_title"><span class="name">Hannah W.</span><span class="position"> Lawyer</span></p>
                             <ul class="social_links">
@@ -544,14 +547,14 @@
         <!-- End  Address Section -->
 
         <!-- Start News  Section-->
-        <section class="section news">     
+        <section id="news" class="section news">     
                 <div class="container">
                     <div class="upper_section">
                         <h2 class="h2">Latest News</h2>
                         <p class="sub-h2 text-16">Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="lower_section grid">
-                        <article class="article">
+                        <article class="article" data-aos="zoom-out-left"  data-aos-duration="600">
                             <img src="assets/major_victory.jpg" alt="" aria-hidden="true" class="article_img">
                             <div class="article_content">
                                 <h3>
@@ -567,7 +570,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="article">
+                        <article class="article" data-aos="zoom-out-left"  data-aos-duration="600" data-aos-delay="300">
                             <img src="assets/agreement.jpg" alt="" aria-hidden="true" class="article_img">
                             <div class="article_content">
                                 <h3>
@@ -583,7 +586,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="article">
+                        <article class="article" data-aos="zoom-out-left"  data-aos-duration="600" data-aos-delay="600">
                             <img src="assets/court.jpg" alt="" aria-hidden="true" class="article_img">
                             <div class="article_content">
                                 <h3>
@@ -606,7 +609,7 @@
         <!--End News  Section-->
 
         <!-- Start Contact Section-->
-        <section class="section contact">
+        <section id="contact"  class="section contact">
             <div class="overlay"></div>
             <div class="contact_content container">
                 <div class="upper_section">
@@ -614,7 +617,7 @@
                     <p class="sub-h2 text-16">For any inquiries, get in touch!</p>
                 </div>
                 <div class="lower_section">
-                    <div class="contact_image">
+                    <div class="contact_image" data-aos="fade-right" data-aos-duration="1000">
                         <!-- <img src="../assets/contact.jpg" alt="" aria-hidden="true"> -->
                         <p class="text-14">Lorem ipsum dolor sit.</p>
                         <h3 class="xl-text">WE'd love to hear you </h3>
@@ -623,7 +626,7 @@
                             and respond as soon as possible.
                         </p>
                     </div>
-                    <form action="/" method="post" id="contact_form" class="contact_form">
+                    <form action="/" method="post" id="contact_form" class="contact_form" novalidate="novalidate" data-aos="fade-left" data-aos-duration="1000">
                         <fieldset>
                             <legend class="sr-only">Personal Information</legend>
                             <div class="contact_box">
@@ -634,18 +637,12 @@
                                 <label for="email" class="label">Email</label>
                                 <input type="email" id="email" name="email" class="input" required>
                             </div>
-                
-                            <div class="contact_box">
-                                <label for="phone" class="label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="input" required>
-                            </div>
-                
                             <div class="contact_box">
                                 <label for="message" class="label">Message</label>
                                 <textarea id="message" name="message" rows="4" class="input" required></textarea>
                             </div>
                 
-                            <button type="submit" class="submit_btn y-button">Submit</button>
+                            <button type="submit" id="submitForm" class="submit_btn y-button">Submit</button>
                 
                         </fieldset>
                     </form>
@@ -662,7 +659,7 @@
     <footer class="footer section">
         <div class="container">
             <div class="ft_box">
-                <a href="/" class="flex-r logo-link">
+                <a href="#home" class="flex-r logo-link">
                     <i class="scale ri-scales-3-line" aria-hidden="true"></i>
                     <p class="flex-c logo-text">Lawe <span class="sm-logo-text">Lawyer & Attorneys</span></p>
                 </a>
@@ -706,11 +703,11 @@
             <div class="ft_box">
                 <h3 class="header-3">Useful Links</h3>
                 <ul class="flex-start">
-                    <li><a href="/" class="link">About Us</a></li>
-                    <li><a href="/" class="link">Attorneys</a></li>
-                    <li><a href="/" class="link">Case Study</a></li>
-                    <li><a href="/" class="link">Practice Areas</a></li>
-                    <li><a href="/" class="link">Contact</a></li>
+                    <li><a href="#about" class="link">About Us</a></li>
+                    <li><a href="attorney" class="link">Attorneys</a></li>
+                    <li><a href="#news" class="link">Case Study</a></li>
+                    <li><a href="#practice" class="link">Practice Areas</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
                 </ul>
             </div>
         </div>
